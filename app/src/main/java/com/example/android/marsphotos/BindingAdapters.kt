@@ -34,7 +34,7 @@ fun bindRecyclerView(
 
 @BindingAdapter("marsApiStatus")
 fun bindStatus(statusImageView: ImageView,
-    status: MarsApiStatus?) {
+    status: MarsApiStatus) {
         when(status) {
             MarsApiStatus.LOADING -> {
                 statusImageView.visibility = View.VISIBLE
